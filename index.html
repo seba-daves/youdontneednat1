@@ -10,6 +10,9 @@
                         let newver=document.getElementById("english").innerHTML;
                         document.getElementById("bdy").innerHTML=newver;
                         document.getElementsByTagName("title")[0].innerText="You Don't Need NAT1"
+                        if(window.location.href.includes("?l=it")){
+                            window.location.href=window.location.href.replace("?l=it","");
+                        }
                         break;
                     case "it":
                         window.location.href+="./?l=it";
